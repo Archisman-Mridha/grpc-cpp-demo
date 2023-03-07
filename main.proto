@@ -1,0 +1,12 @@
+syntax= "proto3";
+
+package grpc_cpp_test;
+
+service GrpcCppTest {
+    rpc TestGrpcServer(TestGrpcServerRequest) returns(TestGrpcServerResponse) { }}
+
+message TestGrpcServerRequest { }
+
+message TestGrpcServerResponse {
+    string message= 1;
+}
